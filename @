@@ -5,23 +5,15 @@ description = "Default template for PDM package"
 authors = [
     {name = "minju210", email = "juliana6190210@gmail.com"},
 ]
-dependencies = [
-    "tqdm>=4.66.5",
-    "requests>=2.32.3",
-]
+dependencies = []
 requires-python = "==3.11.*"
 readme = "README.md"
 license = {text = "MIT"}
 
 
 [tool.pdm]
-distribution = true 
+distribution = false
 
-[tool.pdm.dev-dependencies]
-test = [
-    "pytest>=8.3.2",
-    "pytest-cov>=5.0.0",
-]
 [tool.pytest.ini_options]
 pythonpath = "src"
 
